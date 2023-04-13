@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  }
+  header{
+      height: 300px;
+  }
+  .container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+  }
+  .box {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    background-color: #f1f1f1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .search-container{
+    background: #2f3640;
+    height: 3rem;
+    
+    
+    border-radius: 40px;
+    padding: 10px;
+  }
+
+  .search-container:hover > #name{
+    width: 300px;
+    padding: 0 10px;
+    
+  }
+
+  .search-container:hover > #search-button{
+    background: white;
+    color: #2f3640;
+
+  }
+
+  #search-button{
+    color: white;
+    float: right;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.8s;
+  }
+  #name {
+    border:none;
+    background: none;
+    outline:none;
+    float:left;
+    padding: 0;
+    color: white;
+    font-size: 20px;
+    transition: 0.4s;
+    line-height: 50px;
+    width: 0px;
+
+}
+@media screen and (max-width: 620px) {
+    .searchBox:hover > .searchInput {
+        width: 150px;
+        padding: 0 6px;
+    }
+ 
+  @media (max-width: 600px) {
+      .box {
+          
+          height: 600px;
+          border-radius: 0;
+          
+  }}
