@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+          margin: 0;
+          padding: 0;
+          height: 100vh;
+        }
+        header{
+            height: 300px;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .box {
+          width: 80%;
+          max-width: 600px;
+          height: 400px;
+          background-color: #f1f1f1;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          border-radius: 10px;
+          padding: 20px;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+        }
+        .search{
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+            justify-content: center;
+            width: 80%;
+            position: relative;
+            height: 3rem;
+            overflow: hidden;
+        }
+        img{
+            width: 3rem;
+            height: 3rem;
+        }
+        #name{
+            background-color: transparent;
+            height: 3rem;
+            flex-grow: 2;
+            border: none;
+            font-size: 20px;
+            text-align: center;
+                
+        }
+        
+
+        
+       
+        @media (max-width: 600px) {
+            .box {
+                
+                height: 600px;
+                border-radius: 0;
+                
+        }}
+      </style>
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <div class="container">
+        <div class="box">
+            <div class="search">
+                <input type="text" id="name" name="city-name" required minlength="1" maxlength="100">
+                <button><img src="icons/magnifier.png"></button>
+            </div>
+            <p>This box is centered using flexbox and is responsive.</p>
+      </div>
+      
+    </div>  
+    
+</body>
+</html>
