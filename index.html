@@ -6,12 +6,22 @@
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/c3ad7d5294.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Document</title>
 </head>
 <body>
-    <header></header>
+    <header >
+        <h1 id="location"></h1>
+    </header>
     <div class="container">
         <div class="box">
             <div class="search-container">
@@ -21,8 +31,26 @@
                 <button id="search-button"><i class="fa-solid fa-magnifying-glass "></i></button>
                 
             </div>
-            <p>This box is centered using flexbox and is responsive.</p>
-      </div>
+            <div class="twinbox">
+                <div class="childbox box-1" id="temperature">23</div>
+                <div class="childbox box-2"><img class="sun" id="icon" src="./icons/sun.png"></div>
+            </div>
+
+            <div class="thirdbox">
+                <div class="insidethirdbox wind">
+                    <img class="info" src="./icons/wind.png">
+                    <div class="number" id="wind">12</div>
+                </div>
+                <div class="insidethirdbox humidity">
+                    <img class="info" src="./icons/humidity.png">
+                    <div class="number" id="humidity">8</div>
+                </div>
+                <div class="insidethirdbox rain">
+                    <img class="info" src="./icons/umbrella.png">
+                    <div class="number" id="rain">0</div>
+                </div>
+    
+            </div>
       
     </div>  
     

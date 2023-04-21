@@ -2,9 +2,13 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
+    /*font-family: 'Inter', sans-serif;*/
+    font-family: 'Patrick Hand', cursive;
   }
   header{
-      height: 300px;
+      height: 150px;
+      text-align: center;
+      font-size: 3em;
   }
   .container{
       display: flex;
@@ -15,8 +19,8 @@ body {
   }
   .box {
     width: 100%;
-    max-width: 600px;
-    height: 400px;
+    max-width: 800px;
+    height: 600px;
     background-color: #f1f1f1;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
@@ -24,7 +28,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 50px;
   }
 
   .search-container{
@@ -73,16 +77,78 @@ body {
     width: 0px;
 
 }
+.twinbox{
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  align-items: center;
+  
+}
+.childbox{
+  width: 200px;
+  height: 200px;
+  border: none;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10em;
+}
+.box-1{
+  background-color: transparent;
+}
+
+.box-2{
+ background-color: transparent; 
+}
+.sun{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 5s
+}
+.sun:hover {
+  cursor: pointer;
+  transform: rotate(360deg);
+}
+
+.thirdbox{
+  display: flex;
+  height: 200px;
+  width: 450px;
+  justify-content: space-between;
+  align-items: center;
+  
+
+}
+.insidethirdbox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info{
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: contain;
+}
+.number{
+  font-size: 2em;
+}
+
+
 @media screen and (max-width: 620px) {
     .searchBox:hover > .searchInput {
         width: 150px;
         padding: 0 6px;
     }
  
-  @media (max-width: 600px) {
+  @media (max-width: 620px) {
       .box {
           
           height: 600px;
           border-radius: 0;
-          
-  }}
+      }
+      body{
+        padding: 10px;
+      }
+}
