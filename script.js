@@ -1,18 +1,4 @@
-//function getLocation() {
-//  if(navigator.geolocation) {
-//    navigator.geolocation.getCurrentPosition(showPosition);
-//  }
-//  else{
-//    document.getElementById(location).innerHTML = "Location is not available"
-//  }
 
-//}
-
-//function showPosition(position){
-//  const latitude = position.coords.latitude;
-//  const longitude = position.coords.longitude;
-//  document.getElementById("location").innerHTML = `Latitude: ${latitude}, Longitude: ${longitude}`;
-//}
 const locationElement = document.querySelector('#location');
 const tempElement = document.querySelector('#temperature');
 const windElement = document.querySelector('#wind');
@@ -32,8 +18,8 @@ function showPosition(position) {
   const longitude = position.coords.longitude;
   //const locationElement = document.querySelector('#location');
   console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
-
-  url1= `http://localhost:3000/initial/location?lat=${latitude}&lon=${longitude}`
+  //https://teal-gumdrop-0a4dd4.netlify.app
+  url1= `https://weather-server-daf3dbf00b00.herokuapp.com/initial/location?lat=${latitude}&lon=${longitude}`
   fetch(url1)
   .then(response => response.json())
   .then(data => {
@@ -89,7 +75,7 @@ function handleSubmit(event) {
   event.preventDefault();
   const inputData = event.target.elements.cityname.value 
 
-  const url = `http://localhost:3000/weather/${inputData}`
+  const url = `https://weather-server-daf3dbf00b00.herokuapp.com/weather/${inputData}`
   //const locationElement = document.querySelector('#location');
   //const tempElement = document.querySelector('#temperature');
   //const windElement = document.querySelector('#wind');
